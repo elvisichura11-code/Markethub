@@ -138,7 +138,10 @@ fun HomeScreen(){
         Spacer(modifier = Modifier.height(20.dp))
         //Start of row
         Row(
-            modifier = Modifier.padding(start = 20.dp).horizontalScroll(rememberScrollState())
+            modifier = Modifier.padding(start = 20.dp).horizontalScroll(rememberScrollState(
+
+
+            ))
 
         ) {
 
