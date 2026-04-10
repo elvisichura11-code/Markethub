@@ -37,11 +37,15 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.elvis.markethub.R
+import com.elvis.markethub.navigation.ROUT_HOME
+import com.elvis.markethub.navigation.ROUT_REGISTER
 import com.elvis.markethub.ui.theme.neworange
 
 @Composable
-fun LoginScreen(){
+fun LoginScreen(navController: NavController){
     Column(
         modifier = Modifier
             .paint(painter = painterResource(R.drawable.background), contentScale = ContentScale.FillBounds)
@@ -134,9 +138,13 @@ fun LoginScreen(){
         }
         Spacer(modifier = Modifier.height(10.dp))
 
-        TextButton(onClick = {}) {
+        TextButton(onClick = {navController.navigate(ROUT_REGISTER)}) {
             Text(text = " Don't have an account? Register with us now.")
         }
+        TextButton(onClick = {navController.navigate(ROUT_HOME)}) {
+            Text(text = " Go to Home.")
+        }
+
 
 
 
@@ -148,7 +156,7 @@ fun LoginScreen(){
 @Preview(showBackground = true)
 @Composable
 fun LoginScreenPreview(){
-    LoginScreen()
+    LoginScreen(rememberNavController())
 
 
 }
