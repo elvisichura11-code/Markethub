@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.Search
@@ -45,6 +46,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.elvis.markethub.R
+import com.elvis.markethub.navigation.ROUT_INTENT
 import com.elvis.markethub.ui.theme.neworange
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -78,7 +80,9 @@ fun HomeScreen(navController: NavController){
                     ) }
 
                 IconButton(
-                    onClick = {}
+                    onClick = {
+
+                    }
                 ) {
                     Icon(imageVector = Icons.Default.Notifications,
                         contentDescription ="notifications"
@@ -87,9 +91,9 @@ fun HomeScreen(navController: NavController){
                     ) }
 
                 IconButton(
-                    onClick = {}
+                    onClick = {navController.navigate(ROUT_INTENT)}
                 ) {
-                    Icon(imageVector = Icons.Default.Share,
+                    Icon(imageVector = Icons.Default.ArrowForward,
                         contentDescription ="Share"
 
 
