@@ -13,6 +13,7 @@ import com.elvis.markethub.ui.screens.home.HomeScreen
 import com.elvis.markethub.ui.screens.intent.IntentScreen
 import com.elvis.markethub.ui.screens.onboarding.OnBoardingScreen
 import com.elvis.markethub.ui.screens.payment.PaymentScreen
+import com.elvis.markethub.ui.screens.scaffold.ScaffoldScreen
 import com.elvis.markethub.ui.screens.service.ServiceScreen
 
 @Composable
@@ -40,6 +41,7 @@ fun AppNavHost(
         composable(ROUT_SERVICE){ ServiceScreen(navController) }
         composable(ROUT_PAYMENT){ PaymentScreen(navController) }
         composable(ROUT_INTENT){ IntentScreen(navController) }
+        composable(ROUT_SCAFFOLD){ ScaffoldScreen(navController) }
 
     }
 }

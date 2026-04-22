@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1082844281359",
+    "project_id": "markethub-6c368",
+    "storage_bucket": "markethub-6c368.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082844281359:android:76fa7a70ccf18d99f8017a",
+        "android_client_info": {
+          "package_name": "com.elvis.markethub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9_kycc2QMK5-RFFgHYKxuX_3-46R4XRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
